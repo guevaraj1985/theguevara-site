@@ -45,11 +45,12 @@
 
 <body>
   <div class="iframe-wrapper">
-    <div class="loading">Loading Joey’s B3PLRate Engine…</div>
+    <div id="loading" class="loading">Loading Joey’s B3PLRate Engine…</div>
 
     <iframe
       src="https://script.google.com/macros/s/AKfycbyCgN9V65A8KJO2i6Hi1_Ds6pyLthk9IyjqSV-Ff104ZgsmLeDYXfKaqzOPHAw-3PdK/exec"
       allowfullscreen
+      onload="document.getElementById('loading').style.display='none';"
     ></iframe>
   </div>
 </body>
